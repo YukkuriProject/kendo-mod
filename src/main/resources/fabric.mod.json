@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "kendomod",
+	"version": "${version}",
+	"name": "kendo-mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"sources": "https://github.com/YukkuriProject/kendo-mod"
+	},
+	"license": "ARR",
+	"icon": "assets/kendomod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.yukkuriproject.github.kendomod.KendoMod"
+		],
+		"client": [
+			"io.yukkuriproject.github.kendomod.KendoModClient"
+		]
+	},
+	"mixins": [
+		"kendomod.mixins.json",
+		{
+			"config": "kendomod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
