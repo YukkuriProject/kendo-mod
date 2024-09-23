@@ -21,13 +21,7 @@
 			"io.yukkuriproject.github.kendomod.KendoModClient"
 		]
 	},
-	"mixins": [
-		"kendomod.mixins.json",
-		{
-			"config": "kendomod.client.mixins.json",
-			"environment": "client"
-		}
-	],
+	"mixins": [],
 	"depends": {
 		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.21.1",
