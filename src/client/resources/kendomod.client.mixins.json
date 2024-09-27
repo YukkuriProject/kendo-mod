@@ -1,10 +1,8 @@
 {
 	"required": true,
-	"package": "kendomod.mixin.client",
+	"package": "io.yukkuriproject.github.kendomod",
 	"compatibilityLevel": "JAVA_21",
-	"client": [
-		"ExampleClientMixin"
-	],
+	"client": [],
 	"injectors": {
 		"defaultRequire": 1
 	}

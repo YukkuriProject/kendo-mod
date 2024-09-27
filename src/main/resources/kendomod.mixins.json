@@ -1,10 +1,8 @@
 {
 	"required": true,
-	"package": "kendomod.mixin",
+	"package": "io.yukkuriproject.github.kendomod",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
-	],
+	"mixins": [],
 	"injectors": {
 		"defaultRequire": 1
 	}
