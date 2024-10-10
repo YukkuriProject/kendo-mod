@@ -42,7 +42,7 @@ public class SinaiItem extends Item {
         for (QueueRow row : tickQueue) {
             row.tick -= 1;
             if (row.tick <= 0) {
-                new CommandDispatcher<CommandContext<ServerCommandSource>>().execute("/kill @e");
+                //new CommandDispatcher<CommandContext<ServerCommandSource>>().execute("/kill @e");
             }
         }
     }
