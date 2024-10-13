@@ -1,6 +1,7 @@
 package io.yukkuriproject.github.kendomod;
 
 import io.yukkuriproject.github.kendomod.register.ItemRegister;
+import io.yukkuriproject.github.kendomod.register.TickRegister;
 import net.fabricmc.api.ModInitializer;
 
 public class KendoMod implements ModInitializer {
@@ -9,5 +10,6 @@ public class KendoMod implements ModInitializer {
     @Override
     public void onInitialize() {
         ItemRegister.register();
+        TickRegister.register();
     }
 }

@@ -7,7 +7,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class ItemRegister {
+public abstract class ItemRegister {
     public static final SinaiItem SINAI = new SinaiItem();
 
     public static void register() {
