@@ -17,8 +17,6 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
-import net.minecraft.world.chunk.Chunk;
-import net.minecraft.world.tick.Tick;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -35,8 +33,6 @@ public class SinaiItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         if (!world.isClient()) {
-            ServerTickManager serverTickManager = world.getServer().getTickManager();
-            serverTickManager.setTickRate(10);
             tickQueue.add(new QueueRow((ServerPlayerEntity) player, 20));
         }
 
@@ -59,7 +55,7 @@ public class SinaiItem extends Item {
         return super.postHit(stack, target, attacker);
     }
 
-    static class QueueRow {
+    class QueueRow {
         public ServerPlayerEntity player;
         public Integer tick;
         public Integer attacks = 0;
