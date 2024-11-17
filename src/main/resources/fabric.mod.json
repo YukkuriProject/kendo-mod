@@ -2,10 +2,11 @@
 	"schemaVersion": 1,
 	"id": "kendomod",
 	"version": "${version}",
-	"name": "kendo-mod",
+	"name": "剣道Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"thejustcube",
+		"Ham"
 	],
 	"contact": {
 		"sources": "https://github.com/YukkuriProject/kendo-mod"
