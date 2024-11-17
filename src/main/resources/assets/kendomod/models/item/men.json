@@ -6,7 +6,7 @@
 		"2": "kendomod:item/men/texture3",
 		"3": "kendomod:item/men/texture4",
 		"4": "kendomod:item/men/texture5",
-		"particle": "block/texture"
+		"particle": "kendomod:item/men/texture"
 	},
 	"elements": [
 		{
